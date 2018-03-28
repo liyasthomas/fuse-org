@@ -1,0 +1,18 @@
+[
+	{
+		"color":"black",
+		"title":"Developers Community Program",
+		"description":"Apply  now",
+		"img":"unnamed2.jpg",
+		"icon":"arrow-forward",
+		"link":"https://goo.gl/forms/9xCgZBtat0KTwMeg2"
+	},
+	{
+		"color":"white",
+		"title":"About us",
+		"description":"Fuse team",
+		"img":"unnamed1.png",
+		"icon":"arrow-forward",
+		"link":"about"
+	}
+]

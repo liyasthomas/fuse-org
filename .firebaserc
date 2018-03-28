@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fuse-org",
+    "staging": "fuse-org"
+  }
+}
