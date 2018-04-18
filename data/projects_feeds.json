@@ -1,27 +1,10 @@
 [
 	{
-		"title":"Lvr",
-		"icon":"code",
-		"link":""
-	},
-	{
-		"title":"Feedie",
-		"icon":"code",
-		"link":""
-	},
-	{
-		"title":"Fuse Org",
-		"icon":"code",
-		"link":""
-	},
-	{
-		"title":"Pineapple Notes",
-		"icon":"code",
-		"link":""
-	},
-	{
-		"title":"Form Face",
-		"icon":"code",
+		"color":"black",
+		"title":"Feedie!",
+		"description":"Launch",
+		"img":"https://storage.googleapis.com/gd-wagtail-prod-assets/images/Method_9_2x1.max-4000x2000.jpegquality-90.png",
+		"icon":"arrow-forward",
 		"link":""
 	}
 ]
