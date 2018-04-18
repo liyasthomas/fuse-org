@@ -55,7 +55,7 @@
 				.list {
 					width: 50vw;
 				}
-				.item:nth-child(3n+1) {
+				.item:nth-child(5n+1) {
 					@apply --app-grid-expandible-item;
 				}
 			}
@@ -74,7 +74,7 @@
 			</template>
 		</div>
 		<iron-ajax auto
-			url="data/home_feeds.json"
+			url="https://raw.githubusercontent.com/FuseOrg/fuse-org/master/home_feeds.json"
 			id="ajax"
 			loading="{{loading}}"
 			handle-as="json"
@@ -88,28 +88,19 @@
 						<div class="container">
 							<div class="flexchild flex-vertical">
 								<div class="block flexchild flex-horizontal">
-									<div class="flexchild">
-										<div>
-											<img src="{{item.logo}}" alt="{{item.title}}" class="banner">
-										</div>
-										<div class="title">
-											{{item.title}}
-										</div>
-										<div class="description">
-											{{item.description}}
-										</div>
+									<div class="flexchild title">
+										{{item.title}}
 									</div>
 								</div>
-								<div class="flex-horizontal info">
+								<div class="flex-horizontal description">
 									<div class="flexchild">
-										<span>{{item.info}}</span>
+										<span>{{item.description}}</span>
 									</div>
 									<div>
-										<iron-icon icon="my-icons:{{item.icon}}"></iron-icon>
+										<paper-icon-button icon="my-icons:{{item.icon}}"></paper-icon-button>
 									</div>
 								</div>
 							</div>
-							<paper-ripple></paper-ripple>
 						</div>
 					</a>
 				</div>
@@ -120,13 +111,13 @@
 		</div>
     <template is="dom-if" if="{{error}}">
 			<div class="error">
-				<h1>🙁😢😒</h1>
-				<div>Failed to load Home feeds. Make sure you're connected to internet.</div>
+				<span>{{error.statusCode}}</span>
 				<a href="javascript:location.reload();"><paper-icon-button icon="my-icons:refresh"></paper-icon-button></a>
+				<pre>{{error.response}}</pre>
 			</div>
     </template>
 		<template is="dom-if" if="{{loading}}">
-			<paper-progress value="{{progress}}" indeterminate active$="[[loading]]"></paper-progress>
+			<paper-progress indeterminate active$="[[loading]]"></paper-progress>
 		</template>
   </template>
 	<script>
