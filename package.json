@@ -1,5 +1,5 @@
 {
-  "name": "liyas-thomas",
+  "name": "fuse-org",
   "license": "MIT-license",
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/liyasthomas/liyas-thomas.git"
+    "url": "https://github.com/liyasthomas/fuse-org.git"
   },
-  "description": "Official website by Liyas Thomas",
+  "description": "Developers community by Liyas Thomas",
   "author": "@liyasthomas",
   "version": "1.0.0",
   "devDependencies": {
